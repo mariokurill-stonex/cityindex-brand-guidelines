@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Aeonik;
+    font-weight: 300;
+    src: url("../fonts/fontawesome/Aeonik-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Aeonik;
+    font-weight: 400;
+    src: url("../fonts/fontawesome/Aeonik-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Aeonik;
+	font-weight: 500;
+    src: url("../fonts/fontawesome/Aeonik-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Aeonik;
+	font-weight: 600;
+    src: url("../fonts/fontawesome/Aeonik-Bold.otf") format("opentype");
+}
+
+@import url('../fonts/fontawesome/css/all.min.css');
