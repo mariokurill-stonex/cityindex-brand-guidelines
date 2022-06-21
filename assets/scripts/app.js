@@ -168,6 +168,37 @@ if (this.hash !== "") {
 } // End if
 });
 
+$("h2").each(function() {
+    var item = $(this).text();
+
+    var attr = $(this).attr('data-menu-title');
+    if ( typeof attr !== 'undefined' && attr !== false ) {
+      item = attr;
+    }
+    
+    var hyphenated = item.replace(/\s/g,'-');
+    $(this).closest(".main__section-content").attr('id',hyphenated);
+
+    var newLink = $('<li><a href="#'+hyphenated+'" id="">'+item+'</a></li>');
+    $("#menu").append(newLink);
+  }
+);
+
+
+
+var $root = $('html, body');
+
+$('a[href^="#"]').click(function() {
+    var href = $.attr(this, 'href');
+
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+
+    return false;
+});
 
 
 
