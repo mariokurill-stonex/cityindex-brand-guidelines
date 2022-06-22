@@ -17,8 +17,7 @@ body {
 }
 
 ::selection {
-    background: rgb(76,27,183);
-    background: linear-gradient(90deg, rgba(76,27,183,1) 0%, rgba(156,11,147,1) 50%, rgba(255,67,67,1) 100%);
+    background: black;
     color: #fff;
 }
 
@@ -194,6 +193,10 @@ small,
 .main-column__left {
     padding: 8rem 4vw;
     min-height: 100vh;
+}
+
+.no-min-height {
+    min-height: auto;
 }
 
 .main-column__right {
